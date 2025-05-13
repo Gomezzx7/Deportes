@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web informativa sobre deportes con noticias, entrenamientos y recursos actualizados.">
+  <title>Portal de Deportes</title>
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <!-- Cabecera con navegación -->
+  <header>
+    <div class="header-container">
+      <h1>Portal de Deportes</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#entrenamientos">Entrenamientos</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#multimedia">Multimedia</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <!-- Contenido Principal -->
+  <main>
+    <section id="inicio">
+      <h2>Bienvenidos</h2>
+      <p>Descubre el mundo del deporte con entrenamientos, noticias y recursos para mejorar tu rendimiento físico y bienestar.</p>
+      <figure>
+        <img src="img/deportes.jpg" alt="Personas practicando deportes">
+        <figcaption>Entrenamiento deportivo en acción</figcaption>
+      </figure>
+    </section>
+ 
+    <section id="entrenamientos">
+      <h2>Planes de Entrenamiento</h2>
+      <article>
+        <h3>Entrenamiento de Resistencia</h3>
+        <p>Mejora tu capacidad aeróbica con ejercicios de carrera, ciclismo y natación.</p>
+      </article>
+      <article>
+        <h3>Fuerza y Musculación</h3>
+        <p>Desarrolla tu fuerza con rutinas de pesas y ejercicios funcionales.</p>
+      </article>
+      <article>
+        <h3>Flexibilidad y Movilidad</h3>
+        <p>Optimiza tu movilidad con yoga, pilates y estiramientos dinámicos.</p>
+      </article>
+      <article>
+        <h3>Entrenamiento Deportivo Específico</h3>
+        <p>Programas diseñados para mejorar el rendimiento en deportes como fútbol, baloncesto y tenis.</p>
+      </article>
+ 
+      <table>
+        <caption>Comparativa de Entrenamientos</caption>
+        <thead>
+          <tr>
+            <th>Entrenamiento</th>
+            <th>Duración</th>
+            <th>Modalidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Resistencia</td>
+            <td>3 meses</td>
+            <td>Presencial/Online</td>
+          </tr>
+          <tr>
+            <td>Fuerza</td>
+            <td>4 meses</td>
+            <td>Online</td>
+          </tr>
+          <tr>
+            <td>Flexibilidad</td>
+            <td>2 meses</td>
+            <td>Presencial</td>
+          </tr>
+          <tr>
+            <td>Deportivo Específico</td>
+            <td>6 meses</td>
+            <td>Online</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+ 
+    <section id="noticias">
+      <h2>Últimas Noticias</h2>
+      <article>
+        <h3>Nuevas Tendencias en Entrenamiento</h3>
+        <p>Descubre las últimas innovaciones en el mundo del fitness y el deporte.</p>
+        <a href="noticia1.html">Leer más</a>
+      </article>
+      <article>
+        <h3>Eventos Deportivos Destacados</h3>
+        <p>Conoce los próximos torneos y competiciones en diversas disciplinas.</p>
+        <a href="noticia2.html">Leer más</a>
+      </article>
+    </section>
+ 
+    <section id="multimedia">
+      <h2>Video de Entrenamiento</h2>
+      <video controls>
+        <source src="video/entrenamiento.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </section>
+ 
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="enviar.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+ 
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+ 
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+ 
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+ 
+    <section id="faq">
+      <h2>Preguntas Frecuentes</h2>
+      <details>
+        <summary>¿Qué beneficios tiene el entrenamiento regular?</summary>
+        <p>Mejora la salud cardiovascular, la fuerza muscular y el bienestar general.</p>
+      </details>
+      <details>
+        <summary>¿Se necesita equipamiento especial?</summary>
+        <p>Depende del tipo de entrenamiento, algunos requieren pesas o accesorios específicos.</p>
+      </details>
+      <details>
+        <summary>¿Ofrecen asesoramiento personalizado?</summary>
+        <p>Sí, contamos con entrenadores expertos para guiarte en tu progreso.</p>
+      </details>
+    </section>
+  </main>
+ 
+  <aside>
+    <h2>Recursos Adicionales</h2>
+    <ul>
+      <li><a href="https://www.runnersworld.com" target="_blank">Runner's World</a></li>
+      <li><a href="https://www.menshealth.com" target="_blank">Men's Health</a></li>
+      <li><a href="https://www.yogajournal.com" target="_blank">Yoga Journal</a></li>
+    </ul>
+  </aside>
+ 
+  <footer>
+    <p>&copy; 2025 Portal de Deportes. Todos los derechos reservados.</p>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#entrenamientos">Entrenamientos</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
