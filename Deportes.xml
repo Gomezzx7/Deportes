@@ -1,18 +1,105 @@
+<!DOCTYPE portal SYSTEM "portal_deportes.dtd">
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE feed SYSTEM "feed.dtd">
-<feed>
-  <titulo>Portal de Deportes</titulo>
-  <descripcion>Noticias y entrenamientos deportivos actualizados</descripcion>
+<?xml-stylesheet type="text/xsl" href="portal_deportes.xsl"?>
+
+<portal>
+  <cabecera>
+    <titulo>Portal de Deportes</titulo>
+    <menu>
+      <item href="#inicio">Inicio</item>
+      <item href="#entrenamientos">Entrenamientos</item>
+      <item href="#noticias">Noticias</item>
+      <item href="#multimedia">Multimedia</item>
+      <item href="#contacto">Contacto</item>
+      <item href="#faq">FAQ</item>
+    </menu>
+  </cabecera>
+
+  <inicio>
+    <titulo>Bienvenidos</titulo>
+    <descripcion>Descubre el mundo del deporte con entrenamientos, noticias y recursos para mejorar tu rendimiento físico y bienestar.</descripcion>
+    <imagen src="Deportes.jpg" alt="Personas practicando deportes">Entrenamiento deportivo en acción</imagen>
+  </inicio>
+
+  <entrenamientos>
+    <titulo>Planes de Entrenamiento</titulo>
+    <plan>
+      <nombre>Entrenamiento de Resistencia</nombre>
+      <descripcion>Mejora tu capacidad aeróbica con ejercicios de carrera, ciclismo y natación.</descripcion>
+    </plan>
+    <plan>
+      <nombre>Fuerza y Musculación</nombre>
+      <descripcion>Desarrolla tu fuerza con rutinas de pesas y ejercicios funcionales.</descripcion>
+    </plan>
+    <plan>
+      <nombre>Flexibilidad y Movilidad</nombre>
+      <descripcion>Optimiza tu movilidad con yoga, pilates y estiramientos dinámicos.</descripcion>
+    </plan>
+    <plan>
+      <nombre>Entrenamiento Deportivo Específico</nombre>
+      <descripcion>Programas diseñados para mejorar el rendimiento en deportes como fútbol, baloncesto y tenis.</descripcion>
+    </plan>
+
+    <comparativa>
+      <entrenamiento tipo="Resistencia" duracion="3 meses" modalidad="Presencial"/>
+      <entrenamiento tipo="Fuerza" duracion="4 meses" modalidad="Presencial"/>
+      <entrenamiento tipo="Flexibilidad" duracion="2 meses" modalidad="Presencial"/>
+      <entrenamiento tipo="Deportivo Específico" duracion="6 meses" modalidad="Presencial"/>
+    </comparativa>
+  </entrenamientos>
+
   <noticias>
-    <noticia>
+    <titulo>Últimas Noticias</titulo>
+    <noticia href="noticia1.html">
       <titulo>Nuevas Tendencias en Entrenamiento</titulo>
-      <resumen>Descubre las últimas innovaciones en el mundo del fitness y el deporte.</resumen>
-      <enlace>noticia1.html</enlace>
+      <contenido>Descubre las últimas innovaciones en el mundo del fitness y el deporte.</contenido>
     </noticia>
-    <noticia>
+    <noticia href="noticia2.html">
       <titulo>Eventos Deportivos Destacados</titulo>
-      <resumen>Conoce los próximos torneos y competiciones en diversas disciplinas.</resumen>
-      <enlace>noticia2.html</enlace>
+      <contenido>Conoce los próximos torneos y competiciones en diversas disciplinas.</contenido>
     </noticia>
   </noticias>
-</feed>
+
+  <multimedia>
+    <video src="video.mp4" />
+  </multimedia>
+
+  <contacto>
+    <formulario>
+      <campo nombre="nombre" tipo="text"/>
+      <campo nombre="email" tipo="email"/>
+      <campo nombre="mensaje" tipo="textarea"/>
+    </formulario>
+  </contacto>
+
+  <faq>
+    <pregunta>
+      <q>¿Qué beneficios tiene el entrenamiento regular?</q>
+      <a>Mejora la salud cardiovascular, la fuerza muscular y el bienestar general.</a>
+    </pregunta>
+    <pregunta>
+      <q>¿Se necesita equipamiento especial?</q>
+      <a>Depende del tipo de entrenamiento, algunos requieren pesas o accesorios específicos.</a>
+    </pregunta>
+    <pregunta>
+      <q>¿Ofrecen asesoramiento personalizado?</q>
+      <a>Sí, contamos con entrenadores expertos para guiarte en tu progreso.</a>
+    </pregunta>
+  </faq>
+
+  <recursos>
+    <enlace href="https://www.runnersworld.com">Runner's World</enlace>
+    <enlace href="https://www.menshealth.com">Men's Health</enlace>
+    <enlace href="https://www.yogajournal.com">Yoga Journal</enlace>
+  </recursos>
+
+  <footer>
+    <texto>&copy; 2025 Portal de Deportes. Todos los derechos reservados.</texto>
+    <menu>
+      <item href="#inicio">Inicio</item>
+      <item href="#entrenamientos">Entrenamientos</item>
+      <item href="#noticias">Noticias</item>
+      <item href="#contacto">Contacto</item>
+    </menu>
+  </footer>
+</portal>
