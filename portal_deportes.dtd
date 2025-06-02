@@ -1,0 +1,57 @@
+<!ELEMENT portal (cabecera, inicio, entrenamientos, noticias, multimedia, contacto, faq, recursos, footer)>
+
+<!-- Cabecera -->
+<!ELEMENT cabecera (titulo, menu)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT menu (item+)>
+<!ELEMENT item (#PCDATA)>
+<!ATTLIST item href IDREF #IMPLIED>
+
+<!-- Inicio -->
+<!ELEMENT inicio (titulo, descripcion, imagen)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ATTLIST imagen src CDATA #REQUIRED alt CDATA #REQUIRED>
+
+<!-- Entrenamientos -->
+<!ELEMENT entrenamientos (titulo, plan+, comparativa)>
+<!ELEMENT plan (nombre, descripcion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT comparativa (entrenamiento+)>
+<!ELEMENT entrenamiento EMPTY>
+<!ATTLIST entrenamiento tipo CDATA #REQUIRED
+                         duracion CDATA #REQUIRED
+                         modalidad CDATA #REQUIRED>
+
+<!-- Noticias -->
+<!ELEMENT noticias (titulo, noticia+)>
+<!ELEMENT noticia (titulo, contenido)>
+<!ATTLIST noticia href CDATA #IMPLIED>
+<!ELEMENT contenido (#PCDATA)>
+
+<!-- Multimedia -->
+<!ELEMENT multimedia (video)>
+<!ELEMENT video EMPTY>
+<!ATTLIST video src CDATA #REQUIRED>
+
+<!-- Contacto -->
+<!ELEMENT contacto (formulario)>
+<!ELEMENT formulario (campo+)>
+<!ELEMENT campo EMPTY>
+<!ATTLIST campo nombre CDATA #REQUIRED
+                  tipo (text | email | textarea) #REQUIRED>
+
+<!-- FAQ -->
+<!ELEMENT faq (pregunta+)>
+<!ELEMENT pregunta (q, a)>
+<!ELEMENT q (#PCDATA)>
+<!ELEMENT a (#PCDATA)>
+
+<!-- Recursos -->
+<!ELEMENT recursos (enlace+)>
+<!ELEMENT enlace (#PCDATA)>
+<!ATTLIST enlace href CDATA #REQUIRED>
+
+<!-- Footer -->
+<!ELEMENT footer (texto, menu)>
+<!ELEMENT texto (#PCDATA)>
