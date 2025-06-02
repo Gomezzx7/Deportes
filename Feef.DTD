@@ -1,0 +1,7 @@
+<!ELEMENT feed (titulo, descripcion, noticias)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT noticias (noticia+)>
+<!ELEMENT noticia (titulo, resumen, enlace)>
+<!ELEMENT resumen (#PCDATA)>
+<!ELEMENT enlace (#PCDATA)>
