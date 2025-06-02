@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE feed SYSTEM "feed.dtd">
+<feed>
+  <titulo>Portal de Deportes</titulo>
+  <descripcion>Noticias y entrenamientos deportivos actualizados</descripcion>
+  <noticias>
+    <noticia>
+      <titulo>Nuevas Tendencias en Entrenamiento</titulo>
+      <resumen>Descubre las últimas innovaciones en el mundo del fitness y el deporte.</resumen>
+      <enlace>noticia1.html</enlace>
+    </noticia>
+    <noticia>
+      <titulo>Eventos Deportivos Destacados</titulo>
+      <resumen>Conoce los próximos torneos y competiciones en diversas disciplinas.</resumen>
+      <enlace>noticia2.html</enlace>
+    </noticia>
+  </noticias>
+</feed>
